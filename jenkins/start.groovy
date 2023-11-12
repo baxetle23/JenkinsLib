@@ -1,3 +1,5 @@
+@Library ('JenkinsLib')_
+
 pipeline {
     agent {label 'worker'}
     stages{
