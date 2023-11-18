@@ -39,18 +39,18 @@ pipeline {
         }
         stage("test") {
           steps {
-            sh("run test")
+            sh("echo run test")
           }
         }
         stage("static analize") {
           steps {
-            sh("run static analize")
+            sh("echo run static analize")
           }
         }
         stage("post") {
           steps {
             sh("ls -la")
-            sh("this is end")
+            sh("echo this is end")
           }
         }
     }
