@@ -50,6 +50,7 @@ pipeline {
         stage("post") {
           steps {
             sh("ls -la")
+            archiveArtifacts artifacts: 'app', followSymlinks: false
             sh("echo this is end")
           }
         }
