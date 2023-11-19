@@ -19,6 +19,8 @@ pipeline {
         stage("hello world") {
           steps {
               helloWorld()
+              echo "build id = ${BUILD_ID}"
+              echo "build url = ${BUILD_URL}"
           }
         }
         stage("check tools") {
